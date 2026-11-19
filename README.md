@@ -4,10 +4,12 @@
 
 # ⚡ Awesome Web Standards & Frontend Performance 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![Tracked Projects](https://img.shields.io/badge/Curated%20Projects-40%2B-blue.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Web-Standards-Frontend-Performance)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **A comprehensive, SEO-optimized, curated directory of enterprise SaaS solutions, monitoring suites, and top-tier open-source tools for Web Standards, Core Web Vitals (LCP, INP, CLS), Synthetic Benchmarking, and Frontend Real User Monitoring (RUM).**
 
@@ -25,6 +27,8 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🎯 Frontend Performance Best Practices Checklist](#-frontend-performance-best-practices-checklist)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
 - [⚖️ Disclaimer & License](#-disclaimer--license)
 
 ---
@@ -137,6 +141,26 @@ Contributions are welcome from frontend engineers, performance advocates, and op
 3. 📝 Add your tool in either the SaaS or Open-Source section maintaining strict star count / valuation order.
 4. 🔎 Verify pricing, free tier details, or repository star badges.
 5. 📬 Submit a Pull Request with a clear rationale and verification links.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using this repository! If this curated guide helps streamline your web performance audits, CI/CD budgets, or Core Web Vitals optimization, please consider supporting the project:
+
+- ⭐ **Star** this repository to help others discover it.
+- 🍴 **Fork** and contribute new tools or updates.
+- 📢 **Share** it with your engineering team and across social media.
+- ☕ **Buy me a coffee**: Support ongoing maintenance and open-source research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Web-Standards-Frontend-Performance&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Web-Standards-Frontend-Performance&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Web-Standards-Frontend-Performance&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Web-Standards-Frontend-Performance&type=date&legend=top-left)
 
 ---
 
