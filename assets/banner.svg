@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Text Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Speed Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -100; }
+      }
+      @keyframes floatCard {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes floatCardAlt {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(6px); }
+      }
+      @keyframes waveFlow {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-400px); }
+      }
+      .pulse-bg {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .stream-line {
+        stroke-dasharray: 8, 12;
+        animation: dashMove 3s linear infinite;
+      }
+      .card-1 {
+        animation: floatCard 4s ease-in-out infinite;
+      }
+      .card-2 {
+        animation: floatCardAlt 4.5s ease-in-out infinite;
+      }
+      .wave-path {
+        animation: waveFlow 8s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Animated Grid & Glow Spheres in Background -->
+  <g opacity="0.15">
+    <circle cx="200" cy="80" r="140" fill="#38bdf8" filter="url(#glow)" class="pulse-bg" />
+    <circle cx="1020" cy="260" r="160" fill="#818cf8" filter="url(#glow)" class="pulse-bg" />
+    <circle cx="600" cy="180" r="100" fill="#10b981" filter="url(#glow)" class="pulse-bg" />
+  </g>
+
+  <!-- Technical Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Flowing Dynamic Data Waves in Lower Background -->
+  <g opacity="0.25">
+    <path class="stream-line" d="M-50,290 C150,240 350,330 550,280 C750,230 950,320 1250,270" fill="none" stroke="url(#accentGrad)" stroke-width="2" />
+    <path class="stream-line" d="M-50,310 C200,270 400,340 650,290 C850,250 1050,330 1250,290" fill="none" stroke="url(#titleGrad)" stroke-width="1.5" />
+  </g>
+
+  <!-- Dynamic Metric Badges (Floating Safely in Upper Corners) -->
+  <g class="card-1" transform="translate(60, 42)">
+    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="26" cy="26" r="6" fill="#10b981" />
+    <text x="42" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">LIGHTHOUSE SCORE</text>
+    <text x="42" y="42" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">100 / 100 ⚡</text>
+  </g>
+
+  <g class="card-2" transform="translate(960, 42)">
+    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="26" cy="26" r="6" fill="#06b6d4" />
+    <text x="42" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">CORE WEB VITALS</text>
+    <text x="42" y="42" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">LCP &lt; 1.2s • GOOD</text>
+  </g>
+
+  <!-- Foreground Title and Branding (Crisp, High Contrast, Centered) -->
+  <g text-anchor="middle">
+    <!-- Super Header Badge -->
+    <rect x="420" y="52" width="360" height="28" rx="14" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <text x="600" y="70" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">🚀 WEB STANDARDS &amp; FRONTEND PERFORMANCE</text>
+
+    <!-- Main Title -->
+    <text x="600" y="148" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">
+      Awesome Web Standards &amp; Performance
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="190" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400">
+      Curated Landscape of Next-Gen Web Optimization, Core Web Vitals &amp; RUM Observability
+    </text>
+
+    <!-- Bottom Feature Badges / Pills -->
+    <g transform="translate(250, 240)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="150" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="75" y="23" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">⚡ Core Web Vitals</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(165, 0)">
+        <rect width="180" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="90" y="23" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">📊 Real User Telemetry</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(360, 0)">
+        <rect width="170" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="85" y="23" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🌐 W3C &amp; Baseline Standards</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(545, 0)">
+        <rect width="155" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="77" y="23" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🛠️ CI/CD Budgets</text>
+      </g>
+    </g>
+  </g>
+</svg>
