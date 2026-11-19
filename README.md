@@ -78,9 +78,9 @@ The table below lists leading commercial SaaS and hosted platforms, sorted by co
 
 ## 💻 Open-Source GitHub Projects
 
-The following curated open-source repositories are strictly sorted by their current GitHub star count (descending). Each repository includes an official social star badge directly linking to its stargazers page.
+The following curated open-source repositories are strictly sorted by their current GitHub Stars_Count (descending). Each repository includes an official social Stars_Badge directly linking to its stargazers page.
 
-| Repository & Stars | Category / Purpose | Key Highlights & Architecture |
+| Repository & GitHub_Stars | Category / Purpose | Key Highlights & Architecture |
 | :--- | :--- | :--- |
 | **[Playwright](https://github.com/microsoft/playwright)**<br>[![Playwright Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers) | Synthetic Testing & Automation | Cross-browser automation engine (Chromium, Firefox, WebKit) for multi-step synthetic journeys, DevTools traces, and CPU-throttled interaction latency benchmarking. |
 | **[Sharp](https://github.com/lovell/sharp)**<br>[![Sharp Stars](https://img.shields.io/github/stars/lovell/sharp?style=social&color=white)](https://github.com/lovell/sharp/stargazers) | Asset & Image Optimization | High-speed Node.js image processing library powered by `libvips` for real-time asset conversion into modern AVIF and WebP formats to minimize LCP. |
@@ -138,8 +138,8 @@ Contributions are welcome from frontend engineers, performance advocates, and op
 
 1. 🍴 Fork this repository.
 2. 🌿 Create a descriptive branch: `git checkout -b feat/add-performance-tool`.
-3. 📝 Add your tool in either the SaaS or Open-Source section maintaining strict star count / valuation order.
-4. 🔎 Verify pricing, free tier details, or repository star badges.
+3. 📝 Add your tool in either the SaaS or Open-Source section maintaining strict Stars_Count / valuation order.
+4. 🔎 Verify pricing, free tier details, or repository Stars_Badges.
 5. 📬 Submit a Pull Request with a clear rationale and verification links.
 
 ---
